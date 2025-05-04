@@ -1,0 +1,23 @@
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.list-color1 { color: #ff4500; } 
+.list-color2 { color: #4682b4; } 
+.list-color3 { color: #32cd32; } 
+.list-color4 { color: #ff1493; } 
+.list-color5 { color: #8a2be2; } 
+.list-color6 { color: #ffd700; } 
+
+
+ol.numbered-list { list-style-type: decimal; }
+ul.circle-list { list-style-type: circle; }
+ul.square-list { list-style-type: square; }
+
+
+span.list-item { font-style: italic; }
+div.list-item-box { margin-left: 20px; }

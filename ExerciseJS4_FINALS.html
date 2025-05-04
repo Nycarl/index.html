@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiplication Table</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #bbe7f1;
+                opacity: 0.9;
+            }
+            table {
+                border-collapse: collapse;
+                margin: auto;
+                background-color: #a2bff3;
+                box-shadow: 20px 20px 20px rgba(27, 82, 233, 0.2);
+            }
+            th, td {
+                width: 50px;
+                height: 50px;
+                border: 1px solid #000000;
+                text-align: center;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body onload="tableMaking()">
+        <div id="multiply"></div>
+        <script>
+            function tableMaking() {
+                let rows = prompt("Enter number of rows");
+                let columns = prompt("Enter number of columns");
+                let tableHTML = "<table>";
+
+                for (let i = 1; i <= rows; i++) {
+                    tableHTML += "<tr>";
+                    for (let j = 1; j <= columns; j++) {
+                        tableHTML += `<td>${i * j}</td>`;
+                    }
+                    tableHTML += "</tr>";
+                }
+                tableHTML += "</table>";
+                document.getElementById("multiply").innerHTML = tableHTML;
+            }
+        </script>
+    </body>
+</html>

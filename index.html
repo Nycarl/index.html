@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="ExamCSS.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-transparent shadow-sm" style="backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-4" href="#home" style="color: var(--text);">Portfolio - Anthony/Nycarl </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center gap-2">
+              <li class="nav-item"><a class="nav-link px-3 py-2 rounded-pill" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link px-3 py-2 rounded-pill" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link px-3 py-2 rounded-pill" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link px-3 py-2 rounded-pill" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link px-3 py-2 rounded-pill" href="#contact">Contact</a></li>
+              <li class="nav-item">
+                <button id="mode-toggle" class="btn btn-outline-secondary btn-sm rounded-pill ms-2">light/dark</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<section id="home" class="vh-100 d-flex align-items-center position-relative overflow-hidden">
+  <div id="tsparticles"></div>
+  <div class="container text-center position-relative" style="z-index: 1;">
+    <h1 class="display-4 animate">Welcome to My Portfolio</h1>
+    <p class="lead">Level 1 ComSci Student </p>
+    <div class="blob" style="top: 20%; left: 10%; z-index: 0;"></div>
+  </div>
+</section>
+
+<section id="about" class="py-5" style="background-color: #f9fcff;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Profile Image -->
+      <div class="col-md-5 text-center mb-4 mb-md-0" data-aos="fade-right">
+        <img src="PFP.png" alt="Profile Picture of Anthony Carl T. Cabusao" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
+      </div>
+
+      <!-- About Content -->
+      <div class="col-md-7" data-aos="fade-left">
+        <h2 class="mb-3 text-start">About Me</h2>
+        <p class="text-start"><strong>Name:</strong> Anthony Carl T. Cabusao</p>
+        <p class="text-start">
+          I am a first-year Computer Science student at the University of Baguio, Philippines. I enjoy solving coding challenges on LeetCode and exploring the world of Linux distros. 
+          With some free time on my hands, I actively dive into programming beyond academics—exploring new technologies and learning independently. I also love reading and have a growing interest in Machine Learning.
+        </p>
+        <p class="text-start">
+          This website was originally built as part of my final exam for Human-Computer Interaction 1 (HUMCOM1). However, I plan to enhance it further by showcasing personal projects beyond just coursework.
+        </p>
+
+        <h3 class="mt-4 text-start">Educational Background</h3>
+        <ul class="list-unstyled ps-3 text-start">
+          <li data-aos="fade-up" data-aos-delay="100"><strong>Elementary:</strong> St. Martin's School, Assumption Rd., Baguio City</li>
+          <li data-aos="fade-up" data-aos-delay="200"><strong>High School:</strong> Northridge Academy, Upper City Camp, Baguio City</li>
+          <li data-aos="fade-up" data-aos-delay="300"><strong>Senior High:</strong> University of the Cordilleras, Gov. Pack Rd., Baguio City</li>
+          <li data-aos="fade-up" data-aos-delay="400"><strong>College (Current):</strong> BSCS - University of Baguio, General Luna Rd., Baguio City</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="blob" style="top: 10%; right: 15%;"></div>
+</section>
+
+<section id="skills" class="py-5" style="background-color: #f2f6ff;">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-5" data-aos="fade-down">Skills & Proficiencies</h2>
+    <div class="row">
+
+      <div class="col-md-6 mb-4" data-aos="fade-right">
+        <h5>HTML</h5>
+        <div class="progress skill-progress mb-3">
+          <div class="progress-bar bg-success" style="width: 70%;">70%</div>
+        </div>
+
+        <h5>CSS</h5>
+        <div class="progress skill-progress mb-3">
+          <div class="progress-bar bg-info" style="width: 85%;">85%</div>
+        </div>
+
+        <h5>JavaScript</h5>
+        <div class="progress skill-progress mb-3">
+          <div class="progress-bar bg-warning text-dark" style="width: 50%;">50%</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4" data-aos="fade-left">
+        <h5>Java</h5>
+        <div class="progress skill-progress mb-3">
+          <div class="progress-bar bg-danger" style="width: 35%;">35%</div>
+        </div>
+
+        <h5>Python</h5>
+        <div class="progress skill-progress mb-3">
+          <div class="progress-bar bg-primary" style="width: 45%;">45%</div>
+        </div>
+
+        <h5>C</h5>
+        <div class="progress skill-progress mb-3">
+          <div class="progress-bar bg-secondary" style="width: 35%;">35%</div>
+        </div>
+
+        <h5>C#</h5>
+        <div class="progress skill-progress mb-3">
+          <div class="progress-bar bg-dark" style="width: 25%;">25%</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="py-5" style="background-color: #f2f6ff;">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4">Projects</h2>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="projectTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="prelims-tab" data-bs-toggle="tab" data-bs-target="#prelims" type="button" role="tab">Prelims</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="midterms-tab" data-bs-toggle="tab" data-bs-target="#midterms" type="button" role="tab">Midterms</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="finals-tab" data-bs-toggle="tab" data-bs-target="#finals" type="button" role="tab">Finals</button>
+      </li>
+    </ul>
+  
+      <!-- Tab Contents -->
+      <div class="tab-content fade-tabs" id="projectTabsContent">
+  
+        <!-- Prelims Tab -->
+        <div class="tab-pane fade show active" id="prelims" role="tabpanel">
+          <div class="row g-4">
+            <!-- Card items here -->
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="CABUSAO_LAB_EXERCISE_1.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex1Pre.PNG" class="card-img-top" alt="Project 1">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text flex-grow-1">A Basic HTML-intro activity that made use of formatting tags.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="CABUSAO_LAB_EXERCISE_2.html" class="text-decoration-none text-dark w-100" target="_blank">
+              <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                <img src="Ex2Pre.PNG" class="card-img-top" alt="Project 2">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Project 2</h5>
+                  <p class="card-text flex-grow-1">A Basic HTML activity that made use of the 'pre' tag for the first time.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="CABUSAO_LAB_EXERCISE_3.html" class="text-decoration-none text-dark w-100" target="_blank">
+              <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                <img src="Ex3Pre.PNG" class="card-img-top" alt="Project 3">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Project 3</h5>
+                  <p class="card-text flex-grow-1">A basic HTML activity that made use of lists.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="CABUSAO_LAB_EXERCISE_4.html" class="text-decoration-none text-dark w-100" target="_blank">
+              <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                <img src="Ex4Pre.PNG" class="card-img-top" alt="Project 4">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Project 4</h5>
+                  <p class="card-text flex-grow-1">A basic HTML activity that made use of link-rel and other formatting tags.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="CABUSAO_LAB_EXERCISE_5.html" class="text-decoration-none text-dark w-100" target="_blank">
+              <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                <img src="Ex5Pre.PNG" class="card-img-top" alt="Project 5">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Project 5</h5>
+                  <p class="card-text flex-grow-1">A basic HTML activity that made use of a simple table format.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="CABUSAO_LAB_EXERCISE_6.html" class="text-decoration-none text-dark w-100" target="_blank">
+              <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                <img src="Ex6Pre.PNG" class="card-img-top" alt="Project 6">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Project 6</h5>
+                  <p class="card-text flex-grow-1">An HTML activity that made use of a ton of divs and css to make a giant table format.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="CABUSAO_LAB_EXERCISE_7.html" class="text-decoration-none text-dark w-100" target="_blank">
+              <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                <img src="Ex7Pre.PNG" class="card-img-top" alt="Project 7">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Project 7</h5>
+                  <p class="card-text flex-grow-1">An activity that made use of every element present in the previous Preliminary Projects.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Midterms Tab -->
+        <div class="tab-pane fade" id="midterms" role="tabpanel">
+          <div class="row g-4">
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS1.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex9Pre.PNG" class="card-img-top" alt="Project 1">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text flex-grow-1">The first Midterms project. A simple CSS activity that required me to add a border to a previous project from the Prelims.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS2 (1).html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex10Pre.PNG" class="card-img-top" alt="Project 2(1)">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 2(1)</h5>
+                    <p class="card-text flex-grow-1">A simple CSS activity wherein a given border format was replicated.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS2a.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex11Pre.PNG" class="card-img-top" alt="Project 2a">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 2a</h5>
+                    <p class="card-text flex-grow-1">A simple CSS activity wherein the background of a chosen past activity is changed into an image from the internet.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS2b.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex12Pre.PNG" class="card-img-top" alt="Project 2b">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 2b</h5>
+                    <p class="card-text flex-grow-1">A simple CSS activity wherein another given format was followed.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS3.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex13Pre.PNG" class="card-img-top" alt="Project 3">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text flex-grow-1">A simple CSS activity wherein a previous activity was used to be formatted into a given border format.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS4.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex14Pre.PNG" class="card-img-top" alt="Project 4">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 4</h5>
+                    <p class="card-text flex-grow-1">A simple CSS activity wherein another given format was followed.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS5a.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex15Pre.PNG" class="card-img-top" alt="Project 5a">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 5a</h5>
+                    <p class="card-text flex-grow-1">Same activity with Projet 3 with the inclusion of tweaking margin using CSS.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS5b.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex16Pre.PNG" class="card-img-top" alt="Project 5b">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 5b</h5>
+                    <p class="card-text flex-grow-1">Another simple CSS margin tweaking activity.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseCSS6.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex17Pre.PNG" class="card-img-top" alt="Project 6">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 6</h5>
+                    <p class="card-text flex-grow-1">The last Midterms laboratory activity wherein a previous lab activity was formatted to have hover effects and even more divs.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Finals Tab -->
+        <div class="tab-pane fade" id="finals" role="tabpanel">
+          <div class="row g-4">
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseJS1_FINALS.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex18Pre.PNG" class="card-img-top" alt="Project 1">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text flex-grow-1">The first Finals project. A simple JS activity wherein I constructed a simple calculater that can perform basic artihmetic.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseJS2_FINALS.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex19Pre.PNG" class="card-img-top" alt="Project 2">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text flex-grow-1">A simple JS activity wherein I constructed a prime-composite and even-odd number checker program.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseJS3_FINALS.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex20Pre.PNG" class="card-img-top" alt="Project 3">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text flex-grow-1">A simpls JSS activity wherein a program that takes an input number (kilometers) is to be converted to its centimeter value equivalent.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+              <a href="ExerciseJS4_FINALS.html" class="text-decoration-none text-dark w-100" target="_blank">
+                <div class="card shadow h-100 w-100 project-card d-flex flex-column">
+                  <img src="Ex21Pre.PNG" class="card-img-top" alt="Project 4">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Project 4</h5>
+                    <p class="card-text flex-grow-1">The final Finals project wherein I created a program that would prompt the user to enter the no. of rows and columns which the program then 
+                      makes a table out of.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Get In Touch</h2>
+      <form action="https://formspree.io/f/xpwdpged" method="POST" id="contactForm" class="contact-form mx-auto" novalidate>
+        <div class="mb-4">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control custom-input" id="name" required />
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control custom-input" id="email" required />
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control custom-input" id="message" rows="4" required></textarea>
+          <div class="invalid-feedback">Please enter a message.</div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-outline-light px-5">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 My Portfolio. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/tonycqrll" target="_blank" class="social-icon" aria-label="Instagram">
+          Instagram
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    const toggleButton = document.getElementById('mode-toggle');
+    toggleButton.addEventListener('click', () => {
+      const html = document.documentElement;
+      const isLight = html.getAttribute('data-theme') === 'light';
+      html.setAttribute('data-theme', isLight ? 'dark' : 'light');
+    });
+
+    document.querySelectorAll('a.nav-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+          const target = document.querySelector(this.hash);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 70,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+
+    const animatedElements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+    animatedElements.forEach(el => observer.observe(el));
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 15,
+  speed: 400,
+  glare: true,
+  "max-glare": 0.2
+});
+
+tsParticles.load("tsparticles", {
+  background: {
+    color: {
+      value: "transparent"
+    }
+  },
+  fpsLimit: 60,
+  interactivity: {
+    events: {
+      onClick: { enable: true, mode: "push" },
+      onHover: { enable: true, mode: "repulse" },
+      resize: true
+    },
+    modes: {
+      push: { quantity: 4 },
+      repulse: { distance: 100, duration: 0.4 }
+    }
+  },
+  particles: {
+    color: { value: "#4CAF50" },
+    links: {
+      color: "#4CAF50",
+      distance: 150,
+      enable: true,
+      opacity: 0.4,
+      width: 1
+    },
+    collisions: { enable: true },
+    move: {
+      direction: "none",
+      enable: true,
+      outModes: { default: "bounce" },
+      random: false,
+      speed: 1,
+      straight: false
+    },
+    number: {
+      density: { enable: true, area: 800 },
+      value: 50
+    },
+    opacity: { value: 0.5 },
+    shape: { type: "circle" },
+    size: { value: { min: 1, max: 5 } }
+  },
+  detectRetina: true
+});
+  </script>
+  <script>
+    function showProjects(category) {
+      document.querySelectorAll('.project-category').forEach(section => {
+        section.classList.add('d-none');
+      });
+      document.getElementById(category).classList.remove('d-none');
+    }
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: false,   
+    mirror: true    
+  });
+</script>
+</body>
+</html>

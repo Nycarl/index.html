@@ -1,0 +1,258 @@
+:root 
+{
+  --bg: #ffffff;
+  --text: #000000;
+  --nav-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --hover-bg: #4CAF50;
+  --active-bg: #388E3C;
+  --section-gradient: linear-gradient(135deg, #d0f0fd, #ffffff);
+}
+
+[data-theme="dark"] 
+{
+  --bg: #121212;
+  --text: #e0e0e0;
+  --nav-bg: #1f1f1f;
+  --card-bg: #2c2c2c;
+  --hover-bg: #80C7A1;
+  --active-bg: #4CAF50;
+  --section-gradient: linear-gradient(135deg, #1f1f1f, #2e3c40);
+}
+
+body 
+{
+  background-color: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
+}
+.skill-progress 
+{
+  height: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.skill-progress .progress-bar 
+{
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: width 1.2s ease-in-out;
+  border-radius: 12px;
+}
+
+.card-img-top 
+{
+  object-fit: cover;
+  height: 200px;
+}
+.project-card 
+{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover 
+{
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fade-tabs .tab-pane 
+{
+  animation: fadeInTab 0.5s ease-in-out;
+}
+
+@keyframes fadeInTab 
+{
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar, footer 
+{
+  background-color: var(--nav-bg) !important;
+}
+
+.navbar-brand 
+{
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover 
+{
+  color: var(--hover-bg);
+}
+
+.navbar .nav-link {
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.navbar .nav-link:hover {
+  background-color: var(--hover-bg);
+  color: white;
+  transform: scale(1.05);
+}
+
+.navbar .nav-link.active {
+  background-color: var(--active-bg);
+  color: white;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text);
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  background: var(--section-gradient);
+}
+
+section:not(#home):before,
+section:not(#home):after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 30"%3E%3Cpath d="M0,10 C20,5 40,15 60,10 C80,5 100,15 120,10" stroke="%234CAF50" stroke-width="2" fill="transparent" /%3E%3C/svg%3E') repeat-x;
+  background-size: 300px 100%;
+  opacity: 0.5;
+  animation: wave 5s ease-in-out infinite;
+}
+
+section:not(#home):before {
+  top: -40px;
+  left: 0;
+}
+
+section:not(#home):after {
+  bottom: -40px;
+  left: 0;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.blob {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: var(--hover-bg);
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+footer {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #333;
+}
+
+.btn-dark {
+  transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+/* Light Mode Styles for About Section */
+#about h2, #about h3 {
+color: #2c3e50; /* Dark text color */
+font-weight: 600;
+}
+
+#about p, #about li {
+font-size: 1rem;
+line-height: 1.6;
+color: #333; /* Dark text color */
+text-align: left; 
+}
+
+/* Dark Mode Styles for About Section */
+[data-theme="dark"] #about h2, 
+[data-theme="dark"] #about h3 {
+color: #fff; /* White text color in dark mode */
+}
+
+[data-theme="dark"] #about p, 
+[data-theme="dark"] #about li {
+color: #e0e0e0; /* Light text color in dark mode */
+}
+
+.contact-section {
+  background: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form {
+  background: rgba(33, 37, 41, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  max-width: 600px;
+  animation: slideUp 0.9s ease-out both;
+}
+
+.custom-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.contact-form label {
+  color: #f8f9fa;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
